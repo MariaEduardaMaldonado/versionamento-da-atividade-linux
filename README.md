@@ -14,7 +14,9 @@ Changes to /etc/sysconfig/network-scripts/ifcfg-enp0s3 and /etc/resolv.conf file
 
 #### A static IP has been configured for the network, IP: 192.168.0.115. 
 
-The /etc/sysconfig/network-scripts/ifcfg-enp0s3 file has changed. Adding static IP 192.168.0.115, netmask 255.255.255.0 and gateway 192.168.0.1.
+The /etc/sysconfig/network-scripts/ifcfg-enp0s3 file has changed. Switching from DHCP mode to static. 
+
+Adding static IP 192.168.0.115, netmask 255.255.255.0 and gateway 192.168.0.1.
 
 The /etc/resolv.conf file has changed. Adding Google DNS 8.8.8.8 and 8.8.4.4.
 
@@ -30,10 +32,10 @@ Snapshot File: {4de35b40-d10d-4481-8fea-80e1b968189d}.vhd
 
 Trust relationship between VMs established.
 
-Changes to /root/.ssh directory. Authorized_keys file created on both machines to store the keys.
+Changes to /root/.ssh directory. "authorized_keys" file created on both machines to store the keys.
 
 Snapshot Files: 
 
-VM1 (Oracle Linux 1) :{9d330f06-d8ae-4966-97ea-4398f3ca850a}.vhd
+VM1 (Oracle Linux 1) :{9d330f06-d8ae-4966-97ea-4398f3ca850a}.vhd  IP: 192.168.0.200
 
-VM2 (Oracle-Linux) : {397536df-3c06-4298-a0c4-c2f711dd6182}.vhd
+VM2 (Oracle-Linux) : {397536df-3c06-4298-a0c4-c2f711dd6182}.vhd   IP:192.168.0.115
