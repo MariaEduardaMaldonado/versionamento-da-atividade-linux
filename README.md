@@ -15,3 +15,10 @@ Changes to /etc/sysconfig/network-scripts/ifcfg-enp0s3 and /etc/resolv.conf file
 A static IP has been configured for the network. IP: 192.168.0.115.
 
 File: {c16a8951-a953-4ce4-9bce-12d45735a9d0}.vhd
+
+### Version 2.1
+
+Updated virtual machine. Installing and updating packages.
+
+File: {4de35b40-d10d-4481-8fea-80e1b968189d}.vhd
+
