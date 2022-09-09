@@ -4,7 +4,7 @@
 
 The installation of Oracle Linux 8.6 is complete. The root user has been logged in.
 
-File: {e5bd9d5d-5f5c-42ca-bfae-2ec33de45d8a}.vhd
+Snapshot File: {e5bd9d5d-5f5c-42ca-bfae-2ec33de45d8a}.vhd
 
 ## Version 2.0
 
@@ -12,13 +12,28 @@ VM VLAN configured in BRIGDE mode. Made the necessary adjustments.
 
 Changes to /etc/sysconfig/network-scripts/ifcfg-enp0s3 and /etc/resolv.conf files.
 
-A static IP has been configured for the network. IP: 192.168.0.115.
+#### A static IP has been configured for the network, IP: 192.168.0.115. 
 
-File: {c16a8951-a953-4ce4-9bce-12d45735a9d0}.vhd
+The /etc/sysconfig/network-scripts/ifcfg-enp0s3 file has changed. Adding static IP 192.168.0.115, netmask 255.255.255.0 and gateway 192.168.0.1.
+
+The /etc/resolv.conf file has changed. Adding Google DNS 8.8.8.8 and 8.8.4.4.
+
+Snapshot File: {c16a8951-a953-4ce4-9bce-12d45735a9d0}.vhd
 
 ### Version 2.1
 
 Updated virtual machine. Installing and updating packages.
 
-File: {4de35b40-d10d-4481-8fea-80e1b968189d}.vhd
+Snapshot File: {4de35b40-d10d-4481-8fea-80e1b968189d}.vhd
 
+## Version 3.0
+
+Trust relationship between VMs established.
+
+Changes to /root/.ssh directory. Authorized_keys file created on both machines to store the keys.
+
+Snapshot Files: 
+
+VM1 (Oracle Linux 1) :{9d330f06-d8ae-4966-97ea-4398f3ca850a}.vhd
+
+VM2 (Oracle-Linux) : {397536df-3c06-4298-a0c4-c2f711dd6182}.vhd
