@@ -39,3 +39,15 @@ Snapshot Files:
 VM1 (Oracle Linux 1) :{9d330f06-d8ae-4966-97ea-4398f3ca850a}.vhd  IP: 192.168.0.200
 
 VM2 (Oracle-Linux) : {397536df-3c06-4298-a0c4-c2f711dd6182}.vhd   IP:192.168.0.115
+
+## Version 3.1
+
+Bug fixes. File sharing via samba server.
+
+Changes to /etc/samba directory. File smb.conf was changed.
+
+Snapshot Files:
+
+VM1 (Oracle Linux 1) : {51fac9a7-1e78-4cfd-abb6-d7481010d502}.vhd    IP: 192.168.0.200
+
+VM2 (Oracle-Linux) : {0dc8ded3-0432-475d-94fa-a2c3241de37b}.vhd   IP:192.168.0.115
