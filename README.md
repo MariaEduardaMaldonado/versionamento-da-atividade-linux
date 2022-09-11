@@ -59,6 +59,8 @@ Updates and bug fixes.
 Trust relationship between machines rebuilt.
 Changes to the /root/.ssh directory. File "authorized_keys" created on both machines to store the keys.
 
+Snapshot Files:
+
 VM1 (Oracle Linux 1) : {8f49992b-39e8-49b1-a427-4b284e1fec73}.vhd    IP: 192.168.0.200
 
 VM2 (Oracle-Linux) : {0fb75d1b-b455-4798-82cb-1d695bbd30fa}.vhd      IP:192.168.0.115
