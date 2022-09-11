@@ -32,7 +32,7 @@ Snapshot File: {4de35b40-d10d-4481-8fea-80e1b968189d}.vhd
 
 Trust relationship between VMs established.
 
-Changes to /root/.ssh directory. "authorized_keys" file created on both machines to store the keys.
+Changes to the /root/.ssh directory. "authorized_keys" file created on both machines to store the keys.
 
 Snapshot Files: 
 
@@ -44,10 +44,21 @@ VM2 (Oracle-Linux) : {397536df-3c06-4298-a0c4-c2f711dd6182}.vhd   IP:192.168.0.1
 
 Bug fixes. File sharing via samba server.
 
-Changes to /etc/samba directory. File smb.conf was changed.
+Changes to the /etc/samba directory. File smb.conf was changed.
 
 Snapshot Files:
 
 VM1 (Oracle Linux 1) : {51fac9a7-1e78-4cfd-abb6-d7481010d502}.vhd    IP: 192.168.0.200
 
 VM2 (Oracle-Linux) : {0dc8ded3-0432-475d-94fa-a2c3241de37b}.vhd   IP:192.168.0.115
+
+### Version 3.2
+
+Updates and bug fixes.
+
+Trust relationship between machines rebuilt.
+Changes to the /root/.ssh directory. File "authorized_keys" created on both machines to store the keys.
+
+VM1 (Oracle Linux 1) : {92aa0f2b-e3a8-40e8-be10-4097a760f20a}.vhd    IP: 192.168.0.200
+
+VM2 (Oracle-Linux) : {0fb75d1b-b455-4798-82cb-1d695bbd30fa}.vhd      IP:192.168.0.115
