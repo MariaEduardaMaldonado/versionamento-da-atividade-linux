@@ -40,7 +40,7 @@ VM1 (Oracle Linux 1) :{9d330f06-d8ae-4966-97ea-4398f3ca850a}.vhd  IP: 192.168.0.
 
 VM2 (Oracle-Linux) : {397536df-3c06-4298-a0c4-c2f711dd6182}.vhd   IP:192.168.0.115
 
-## Version 3.1
+### Version 3.1
 
 Bug fixes. File sharing via samba server.
 
