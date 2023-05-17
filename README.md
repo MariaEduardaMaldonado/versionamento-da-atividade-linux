@@ -1,66 +1,78 @@
-# Versionamento-da-atividade-Linux
+# Versionamento da atividade Linux  
 
-## Version 1.0
+## 📌 Versão 1.0
+``` 
+A instalação do Oracle Linux 8.6 está concluída. O usuário root foi logado.
+``` 
 
-The installation of Oracle Linux 8.6 is complete. The root user has been logged in.
+> Snapshot File: {e5bd9d5d-5f5c-42ca-bfae-2ec33de45d8a}.vhd
 
-Snapshot File: {e5bd9d5d-5f5c-42ca-bfae-2ec33de45d8a}.vhd
+## 📌 Versão 2.0
+``` 
+VM VLAN configurada em modo BRIGDE. Foram realizados os ajustes necessários.
+``` 
+> Alterações nos arquivos:
+* /etc/sysconfig/network-scripts/ifcfg-enp0s3 
+* /etc/resolv.conf
 
-## Version 2.0
+``` 
+Um IP estático foi configurado para a rede, IP: 192.168.0.115
+```   
+> O arquivo /etc/sysconfig/network-scripts/ifcfg-enp0s3 foi alterado. Mudando do modo DHCP para estático.  
+```
+Adicionando IP estático: 192.168.0.115, máscara de rede: 255.255.255.0 e gateway: 192.168.0.1
+```
+> O arquivo /etc/resolv.conf foi alterado. Adicionando Google DNS: 8.8.8.8 e 8.8.4.4
 
-VM VLAN configured in BRIGDE mode. Made the necessary adjustments. 
+> Snapshot File: {c16a8951-a953-4ce4-9bce-12d45735a9d0}.vhd
 
-Changes to /etc/sysconfig/network-scripts/ifcfg-enp0s3 and /etc/resolv.conf files.
+### 📌 Versão 2.1
+``` 
+Máquina virtual atualizada. Instalação e atualização de pacotes.
+``` 
+> Snapshot File: {4de35b40-d10d-4481-8fea-80e1b968189d}.vhd
 
-#### A static IP has been configured for the network, IP: 192.168.0.115. 
+## 📌 Versão 3.0
+``` 
+Relação de confiança entre VMs estabelecida.
+``` 
+> Alterações no diretório /root/.ssh  
+> Arquivo "authorized_keys" criado em ambas as máquinas para armazenar as chaves.
 
-The /etc/sysconfig/network-scripts/ifcfg-enp0s3 file has changed. Switching from DHCP mode to static. 
+> Snapshot Files: 
 
-Adding static IP 192.168.0.115, netmask 255.255.255.0 and gateway 192.168.0.1.
+* VM1 (Oracle Linux 1) :{9d330f06-d8ae-4966-97ea-4398f3ca850a}.vhd  IP: 192.168.0.200
 
-The /etc/resolv.conf file has changed. Adding Google DNS 8.8.8.8 and 8.8.4.4.
+* VM2 (Oracle-Linux) : {397536df-3c06-4298-a0c4-c2f711dd6182}.vhd   IP:192.168.0.115
 
-Snapshot File: {c16a8951-a953-4ce4-9bce-12d45735a9d0}.vhd
+### 📌 Versão 3.1
+```
+Correções de bugs. Compartilhamento de arquivos via servidor samba.
+```
+> Alterações no diretório /etc/samba. O arquivo smb.conf foi alterado.
 
-### Version 2.1
+> Snapshot Files:  
 
-Updated virtual machine. Installing and updating packages.
+* VM1 (Oracle Linux 1) : {51fac9a7-1e78-4cfd-abb6-d7481010d502}.vhd    IP: 192.168.0.200
 
-Snapshot File: {4de35b40-d10d-4481-8fea-80e1b968189d}.vhd
+* VM2 (Oracle-Linux) : {0dc8ded3-0432-475d-94fa-a2c3241de37b}.vhd   IP:192.168.0.115
 
-## Version 3.0
+### 📌 Versão 3.2
+```
+Atualizações e correções de bugs.
+```
+```
+Relação de confiança entre máquinas reconstruídas.
+```
+> Alterações no diretório /root/.ssh. Arquivo "authorized_keys" criado em ambas as máquinas para armazenar as chaves.  
 
-Trust relationship between VMs established.
+> Snapshot Files:  
 
-Changes to the /root/.ssh directory. "authorized_keys" file created on both machines to store the keys.
+* VM1 (Oracle Linux 1) : {8f49992b-39e8-49b1-a427-4b284e1fec73}.vhd    IP: 192.168.0.200  
+* VM2 (Oracle-Linux) : {0fb75d1b-b455-4798-82cb-1d695bbd30fa}.vhd      IP:192.168.0.115
 
-Snapshot Files: 
 
-VM1 (Oracle Linux 1) :{9d330f06-d8ae-4966-97ea-4398f3ca850a}.vhd  IP: 192.168.0.200
-
-VM2 (Oracle-Linux) : {397536df-3c06-4298-a0c4-c2f711dd6182}.vhd   IP:192.168.0.115
-
-### Version 3.1
-
-Bug fixes. File sharing via samba server.
-
-Changes to the /etc/samba directory. File smb.conf was changed.
-
-Snapshot Files:
-
-VM1 (Oracle Linux 1) : {51fac9a7-1e78-4cfd-abb6-d7481010d502}.vhd    IP: 192.168.0.200
-
-VM2 (Oracle-Linux) : {0dc8ded3-0432-475d-94fa-a2c3241de37b}.vhd   IP:192.168.0.115
-
-### Version 3.2
-
-Updates and bug fixes.
-
-Trust relationship between machines rebuilt.
-Changes to the /root/.ssh directory. File "authorized_keys" created on both machines to store the keys.
-
-Snapshot Files:
-
-VM1 (Oracle Linux 1) : {8f49992b-39e8-49b1-a427-4b284e1fec73}.vhd    IP: 192.168.0.200
-
-VM2 (Oracle-Linux) : {0fb75d1b-b455-4798-82cb-1d695bbd30fa}.vhd      IP:192.168.0.115
+## 💻 Ambiente de realização da atividade
+```
+Oracle Linux 8.6.0
+```
